@@ -43,3 +43,54 @@ Heart of Agni is the official media unit of the Faculty of Management & Commerce
 - **Google Maps** - Location integration
 
 ## 📁 Project Structure
+heart-of-agni/
+├── index.html # Home page
+├── about.html # About page
+├── gallery.html # Gallery page
+├── events.html # Events page
+├── media-crew.html # Media Crew page
+├── contact.html # Contact page
+├── README.md # This file
+│
+├── assets/
+│ ├── css/
+│ │ ├── index.css # Main styles + homepage
+│ │ ├── about.css # About page styles
+│ │ ├── gallery.css # Gallery page styles
+│ │ ├── events.css # Events page styles
+│ │ ├── contact.css # Contact page styles
+│ │ └── media-crew.css # Media Crew page styles
+│ │
+│ ├── js/
+│ │ ├── main.js # Common JavaScript
+│ │ ├── gallery.js # Gallery functionality
+│ │ ├── events.js # Events functionality
+│ │ └── contact.js # Contact form validation
+│ │
+│ ├── images/
+│ │ ├── logo/ # Logo files
+│ │ │ ├── agini logo white font png.png
+│ │ │ ├── seu_logo.png
+│ │ │ └── UnionLogo.png
+│ │ │
+│ │ ├── index_img/ # Homepage images
+│ │ ├── about_img/ # About page images
+│ │ └── gallery_img/ # Gallery images
+│ │
+│ └── videos/ # Video files
+│
+└── .gitignore # Git ignore file
+
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Web browser (Chrome, Firefox, Safari, Edge)
+- Code editor (VS Code, Sublime Text, etc.)
+- Git (for version control)
+
+### Local Development
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/heart-of-agni.git
+   cd heart-of-agni
