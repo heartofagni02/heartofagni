@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Head section remains the same -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Heart of Agni | SEUSL Media Unit</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header & Navigation - Same as before -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <img src="assets/images/logo/agini logo white font png.png" alt="Heart of Agni Logo">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">HEART OF AGNI</span>
+                            <span class="logo-subtitle">SEUSL Media Unit</span>
+                        </div>
+                    </a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="media_crew.html">media crew</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Events Hero Section - Same as before -->
+    <section class="events-hero">
+        <div class="container">
+            <div class="events-hero-content">
+                <h1 class="events-hero-title">Our Events</h1>
+                <p class="events-hero-subtitle">Experience the vibrant pulse of Faculty of Management & Commerce through
+                    our media coverage</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Events</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Filter & Search - Same as before -->
+    <section class="event-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="eventSearch" placeholder="Search events by name, date, or keyword...">
+                </div>
+
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="categoryFilter"><i class="fas fa-filter"></i> Filter by:</label>
+                        <select id="categoryFilter">
+                            <option value="all">All Events</option>
+                            <option value="academic">Academic Events</option>
+                            <option value="cultural">Cultural Events</option>
+                            <option value="workshop">Workshops</option>
+                            <option value="seminar">Seminars</option>
+                            <option value="sports">Sports Events</option>
+                            <option value="social">Social Events</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="timeFilter"><i class="fas fa-calendar"></i> Time Period:</label>
+                        <select id="timeFilter">
+                            <option value="all">All Time</option>
+                            <option value="upcoming">Upcoming Events</option>
+                            <option value="past">Past Events</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-secondary" id="resetFilters">
+                        <i class="fas fa-redo"></i> Reset Filters
+                    </button>
+                </div>
+            </div>
+
+            <div class="event-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>5</h3>
+                        <p>Upcoming Events</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>156</h3>
+                        <p>Events Covered</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>20+</h3>
+                        <p>Event Partners</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>850+</h3>
+                        <p>Hours of Coverage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events  need to update
+    <section class="upcoming-events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-subtitle">Mark your calendar for these exciting upcoming events</p>
+            </div>
+
+            <div class="upcoming-events-grid">
+                
+                <div class="upcoming-event-card featured">
+                    <div class="event-tag">Hima Thuhina - 2025</div>
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Annual Leadership Summit">
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">
+                                <i class="far fa-calendar"></i> June 15-17, 2023
+                            </span>
+                            <span class="event-category academic">Crisess Event</span>
+                        </div>
+                        <h3>Hima Thuhina - 2025</h3>
+                        <p class="event-description">Three-day summit featuring industry leaders, workshops, and
+                            networking sessions for future business leaders.</p>
+
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>9:00 AM - 5:00 PM Daily</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Faculty Auditorium</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Limited to 200 participants</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+                <div class="upcoming-event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+                            alt="Media Workshop">
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">
+                                <i class="far fa-calendar"></i> June 22, 2023
+                            </span>
+                            <span class="event-category workshop">Music Show</span>
+                        </div>
+                        <h3>Agmi Warsha - 2025</h3>
+                        <p class="event-description">Hands-on training session covering advanced techniques in
+                            photography and video production.</p>
+
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>2:00 PM - 6:00 PM</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Media Lab, Room 205</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>30 seats available</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="view-all-upcoming">
+                <a href="#" class="btn btn-secondary">
+                    <i class="fas fa-calendar-alt"></i> View All Upcoming Events
+                </a>
+            </div>
+        </div>
+    </section>
+
+      -->
+
+    <!-- Past Events Gallery - UPDATED WITH NEW EVENTS -->
+    <section class="past-events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Past Events Gallery</h2>
+                <p class="section-subtitle">Relive memorable moments from events we've covered</p>
+            </div>
+
+            <div class="past-events-grid">
+                <!-- Event 01: Haritha Pahasara - 2025 -->
+                <div class="past-event-card" data-event-id="haritha-pahasara-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/thambapanni.jpeg"
+                            alt="Haritha Pahasara - 2025 Cultural Event">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Thambapanni</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> Octomber 02, 2025</span>
+                            <span><i class="fas fa-tag"></i> Cultural Festival</span>
+                        </div>
+                        <p class="event-description-sinhala">
+                            මිහිමත සොඳුරුතම දූපතක<br>
+                            රස මුසු තැන් එක් කල<br>
+                            ඇසි දිසි මියැසි සුයාමය ...<br><br>
+                            තඹ වන් වැල්ලක පියමං දිගේ ...
+                        </p>
+                        <p class="event-description-english">
+                            Organized by the Arts Committee of the Faculty of Management & Commerce Students' Union.
+                            "Tambapanni" was a spectacular celebration of Sri Lankan culture and heritage.
+                        </p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 308 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 2.5K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 02: 13th International Symposium - 2025 -->
+                <div class="past-event-card" data-event-id="13th-international-symposium-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/13th_International_Symposium_Image.jpeg"
+                            alt="13th International Symposium - 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>13<sup>th</sup> International Symposium - 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> September 12, 2025</span>
+                            <span><i class="fas fa-tag"></i> International Conference</span>
+                        </div>
+                        <p>A day filled with knowledge, innovation, and global connections! The South Eastern University
+                            of Sri Lanka proudly hosted the 13th International Symposium, bringing brilliant minds
+                            together
+                            to share ideas, inspire change, and celebrate academic excellence.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 277 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.2K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 03: Entrepreneurship Day 2025 -->
+                <div class="past-event-card" data-event-id="entrepreneurship-day-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/entrepreneurship_day_2025.jpeg"
+                            alt="Entrepreneurship Day 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Entrepreneurship Day 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> September 11, 2025</span>
+                            <span><i class="fas fa-tag"></i> Business & Innovation</span>
+                        </div>
+                        <p>A vibrant celebration of creativity, innovation, and entrepreneurial spirit. Young
+                            visionaries
+                            and budding entrepreneurs showcased their ideas through dynamic stalls, business concepts,
+                            and innovative solutions for the future of business.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 245 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.8K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 04: Sports Fiesta 2025 -->
+                <div class="past-event-card" data-event-id="sports-fiesta-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/sports_fiesta_2025.jpeg"
+                            alt="Sports Fiesta 2025 Awards Ceremony">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Sports Fiesta 2025 – Awards Ceremony</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> April 10, 2025</span>
+                            <span><i class="fas fa-tag"></i> Sports Event</span>
+                        </div>
+                        <p>A grand celebration honoring the talent and dedication of athletes from the Faculty of
+                            Management & Commerce. Champions were recognized in Elle, Cricket, Football, Netball,
+                            Badminton, Table Tennis, and Volleyball competitions.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 189 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.4K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 05: Akurata Hadayak 2025 -->
+                <div class="past-event-card" data-event-id="sports-fiesta-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/akurata_hadayak.jpeg"
+                            alt="Sports Fiesta 2025 Awards Ceremony">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Akurata Hadayak - 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> Aug 08, 2025</span>
+                            <span><i class="fas fa-tag"></i> Sports Event</span>
+                        </div>
+                        <p> ජීවිතය නැමැති මහා අරගලය මැද අධ්‍යාපනය ද මහත් වූ සටනකි.... <br>
+                            හීන පොදි බැඳ ඒ හීන ජය ගැනීමට වෙර දරන ඒ පුංචි ජීවිත මතු අනාගතයට වටිනාකමකි.... <br>
+                            ඒ ජීවිත වලට සවියක් වනු පිණිස, <br>
+                            අග්නිදිග විශ්වවිද්‍යාලීය කළමනාකරණ පීඨ ශිෂ්‍ය සංගමයේ සුහද දියවර අධ්‍යාපන කමිටුව විසින් මෙවරත්
+                            සංවිධානය කරනු ලැබූ පොත් හා අධ්‍යාපන උපකරණ බෙදා දීමේ වැඩසටහන!
+                        </p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 72 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.4K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 06: Bond Bash 2025 -->
+                <div class="past-event-card" data-event-id="bond-bash-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/bond_bash_2025.jpeg"
+                            alt="Bond Bash 2025 Cricket Championship">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>🏏 Bond Bash 2025 🏏</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> July 2025</span>
+                            <span><i class="fas fa-tag"></i> Sports Championship</span>
+                        </div>
+                        <p>An unforgettable celebration of unity, sportsmanship, and brotherhood. Organized by the
+                            Muslim Community of FMC 2020/2021 Batch, bringing together students in the spirit of healthy
+                            competition and lasting memories.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 304 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.8K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 07: 14th Annual International Research Conference 2025 -->
+                <div class="past-event-card" data-event-id="14th-airc-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/airc_2025.jpeg"
+                            alt="14th Annual International Research Conference 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>14th Annual International Research Conference 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> June 2025</span>
+                            <span><i class="fas fa-tag"></i> International Conference</span>
+                        </div>
+                        <p>Sparkling insightful conversations on innovation, integration, and sustainability in
+                            management and commerce. A platform for academic excellence and research innovation.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 197 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 2.1K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 08: Orientation Program 2025 -->
+                <div class="past-event-card" data-event-id="orientation-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/Orientation_Program.jpeg"
+                            alt="Orientation Program 2025 Inaugural Ceremony">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Orientation Program 2025 – Batch 2023/2024</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> June 12, 2025</span>
+                            <span><i class="fas fa-tag"></i> Academic Ceremony</span>
+                        </div>
+                        <p>Welcoming a new generation of aspiring leaders! The beginning of an exciting academic journey
+                            filled with inspiration, enthusiasm, and vibrant energy at University Auditorium.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 195 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.5K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 09: Warshika Pirith Deshanaya 2025 -->
+                <div class="past-event-card" data-event-id="vesak-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/vesak_2025.jpeg" alt="Vesak Celebration 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Warshika Prith Deshanaya - 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> May 2025</span>
+                            <span><i class="fas fa-tag"></i> Religious & Cultural</span>
+                        </div>
+                        <p>වෙසඟේ සිත් පිනෙන් සැනසූ උත්තම බුදුන්ගේ අසිරිමත් තෙමඟුල සිහිපත් කෙරූ සර්වරාත්‍රික පරිත්‍රාණ
+                            ධර්ම දේශනාව.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 178 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.3K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 10: 17th General Convocation -->
+                <div class="past-event-card" data-event-id="17th-convocation">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/convocation_2025.jpeg"
+                            alt="17th General Convocation 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>17th General Convocation – SEUSL</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> May 3-4, 2025</span>
+                            <span><i class="fas fa-tag"></i> Graduation Ceremony</span>
+                        </div>
+                        <p>Celebrating remarkable achievements of Faculty of Arts and Culture graduates. Unforgettable
+                            moments of pride, success, and academic excellence at South Eastern University.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 320 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 2.4K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 11: Muwarabhisheka 2025 -->
+                <div class="past-event-card" data-event-id="muwarabhisheka-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/muwarabhisheka_2025.jpeg"
+                            alt="Muwarabhisheka 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>මුවරාභිෂේක - 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> April 2025</span>
+                            <span><i class="fas fa-tag"></i> Cultural Festival</span>
+                        </div>
+                        <p>නන් දෙසින් පැමිණි උන් එකම පවුලක් ලෙසින් බැඳෙමින්, සහෘදත්වයේ යදමින් අභිෂේක ගන්වනු වස්...</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 235 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.9K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 12: Hanthana Batch Trip -->
+                <div class="past-event-card" data-event-id="hanthana-trip">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/hanthana_trip.jpeg" alt="Hanthana Batch Trip">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>අග්නිදිගෙන් හන්තානට</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> April 2025</span>
+                            <span><i class="fas fa-tag"></i> Batch Trip</span>
+                        </div>
+                        <p>සරසවි ගමනේ මතක පොත අමතක නොවන මතකයන්ගෙන් පුරවන්න... තල් අරණෙන් එහා, ගල් ඔයෙ සුළඟට මෙහා තවත්
+                            එක් සිහිනයක් දකින්න...</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 265 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 2.2K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 13: Agnisuryawaruna 2025 -->
+                <div class="past-event-card" data-event-id="agnisuryawaruna-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/agnisuryawaruna_2025.jpeg"
+                            alt="Agnisuryawaruna 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>අග්නි සූර්ය වරුණා - 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> March 2025</span>
+                            <span><i class="fas fa-tag"></i> Cultural Event</span>
+                        </div>
+                        <p>වස්සානයේ සිරිකත කැන්දමින් අග්නි සූර්ය වරුණා - 2025. කලා කමිටුව කළමනාකරණ පීඨ ශිෂ්‍ය සංගමයේ
+                            සංවිධානය.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 195 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.6K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 14: Noor Al-Iftihar 2025 -->
+                <div class="past-event-card" data-event-id="noor-al-iftihar-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/noor_al_iftihar_2025.jpeg"
+                            alt="Noor Al-Iftihar 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Noor Al-Iftihar 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> March 2025</span>
+                            <span><i class="fas fa-tag"></i> Religious Event</span>
+                        </div>
+                        <p>A vibrant celebration of faith, unity, and togetherness. Organized by the Muslim Community of
+                            FMC, an evening of blessings, prayers, and joyful moments during Ramadan.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 185 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.7K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 15: Holi Festival 2025 -->
+                <div class="past-event-card" data-event-id="holi-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/holi_2025.jpeg" alt="Holi Festival 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Festival of Colours 2025 - Holi</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> March 2025</span>
+                            <span><i class="fas fa-tag"></i> Cultural Festival</span>
+                        </div>
+                        <p>Drenched in vibrant hues of joy, unity, and celebration! The Arts Committee brought Holi to
+                            life in a spectacular way with laughter, togetherness, and unforgettable moments.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 210 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.9K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 16: Beach Cleaning Program 2025 -->
+                <div class="past-event-card" data-event-id="beach-cleaning-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/beach_cleaning_2025.jpeg"
+                            alt="Beach Cleaning Program 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Beach Cleaning Program 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> March 1, 2025</span>
+                            <span><i class="fas fa-tag"></i> Environmental Program</span>
+                        </div>
+                        <p>Organized by the Environment Committee to protect our environment. A successful initiative
+                            bringing together volunteers for a cleaner and greener future.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 145 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.1K Views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 17: Pongal Celebration 2025 -->
+                <div class="past-event-card" data-event-id="pongal-2025">
+                    <div class="past-event-image">
+                        <img src="assets/images/event_img/past_event_img/pongal_2025.jpeg"
+                            alt="Pongal Celebration 2025">
+                        <div class="event-overlay">
+                            <span class="view-gallery">
+                                <i class="fas fa-images"></i> View Gallery
+                            </span>
+                        </div>
+                    </div>
+                    <div class="past-event-info">
+                        <h3>Pongal Celebration 2025</h3>
+                        <div class="past-event-meta">
+                            <span><i class="far fa-calendar"></i> January 2025</span>
+                            <span><i class="fas fa-tag"></i> Cultural Celebration</span>
+                        </div>
+                        <p>A beautiful celebration of tradition, culture, and togetherness organized by the Students'
+                            Union. Vibrant festivities bringing joy and unity to our university community.</p>
+                        <div class="past-event-stats">
+                            <span><i class="fas fa-photo-video"></i> 175 Media Files</span>
+                            <span><i class="fas fa-eye"></i> 1.4K Views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="view-all-past">
+            <a href="gallery.html" class="btn btn-primary">
+                <i class="fas fa-images"></i> Browse Full Event Gallery
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Event Calendar - Same as before -->
+    <section class="event-calendar">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Event Calendar</h2>
+                <p class="section-subtitle">Plan ahead with our comprehensive event schedule</p>
+            </div>
+
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="calendar-nav" id="prevMonth">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h3 id="currentMonth">June 2023</h3>
+                    <button class="calendar-nav" id="nextMonth">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="calendar-grid">
+                    <div class="calendar-weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+
+                    <div class="calendar-days" id="calendarDays">
+                        <!-- Calendar days will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="calendar-legend">
+                    <div class="legend-item">
+                        <span class="legend-color academic"></span>
+                        <span>Academic Events</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color cultural"></span>
+                        <span>Cultural Events</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color workshop"></span>
+                        <span>Workshops</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color seminar"></span>
+                        <span>Seminars</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Upcoming Event List
+            <div class="calendar-events-list">
+                <h3>Events This Month</h3>
+                <div class="events-list">
+                    <div class="list-event-item">
+                        <div class="list-event-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">Jun</span>
+                        </div>
+                        <div class="list-event-details">
+                            <h4>Annual Leadership Summit 2023</h4>
+                            <p><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM | <i class="fas fa-map-marker-alt"></i>
+                                Faculty Auditorium</p>
+                            <span class="event-tag academic">Academic</span>
+                        </div>
+                        <a href="#" class="list-event-action">
+                            <i class="fas fa-info-circle"></i> Details
+                        </a>
+                    </div>
+
+                    <div class="list-event-item">
+                        <div class="list-event-date">
+                            <span class="date-day">22</span>
+                            <span class="date-month">Jun</span>
+                        </div>
+                        <div class="list-event-details">
+                            <h4>Advanced Photography Workshop</h4>
+                            <p><i class="fas fa-clock"></i> 2:00 PM - 6:00 PM | <i class="fas fa-map-marker-alt"></i>
+                                Media Lab</p>
+                            <span class="event-tag workshop">Workshop</span>
+                        </div>
+                        <a href="#" class="list-event-action">
+                            <i class="fas fa-info-circle"></i> Details
+                        </a>
+                    </div>
+
+                    <div class="list-event-item">
+                        <div class="list-event-date">
+                            <span class="date-day">28</span>
+                            <span class="date-month">Jun</span>
+                        </div>
+                        <div class="list-event-details">
+                            <h4>Faculty Alumni Meet</h4>
+                            <p><i class="fas fa-clock"></i> 6:00 PM - 9:00 PM | <i class="fas fa-map-marker-alt"></i>
+                                University Lawn</p>
+                            <span class="event-tag social">Social</span>
+                        </div>
+                        <a href="#" class="list-event-action">
+                            <i class="fas fa-info-circle"></i> Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        -->
+        </div>
+    </section>
+
+    <!-- Event Request CTA - Same as before -->
+    <section class="event-request-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Need Media Coverage for Your Event?</h2>
+                    <p>Heart of Agni provides comprehensive media coverage for faculty events. Submit your request at
+                        least 2 weeks in advance.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i> Request Coverage
+                    </a>
+                    <a href="contact.html#faq" class="btn btn-secondary">
+                        <i class="fas fa-question-circle"></i> View Guidelines
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Same as before -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="footer-logo">
+                            <div class="footer-logo-section">
+                                <div class="logo-icon">
+                                    <img src="assets/images/logo/seu_logo.png" alt="Heart of Agni Logo"
+                                        class="Seu_logo">
+                                </div>
+                                <div class="logo-icon">
+                                    <img src="assets/images/logo/UnionLogo.png" alt="Heart of Agni Logo"
+                                        class="union_logo">
+                                </div>
+                                <div class="logo-icon">
+                                    <img src="assets/images/logo/agini logo white font png.png" alt="Heart of Agni Logo"
+                                        class="media_logo">
+                                </div>
+                            </div>
+                            <br> <br>
+                            <div class="footer-logo-text">
+                                <h3>HEART OF AGNI</h3>
+                                <p>Media Unit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-about">The official media unit of Faculty of Management & Commerce, South Eastern
+                        University of Sri Lanka, dedicated to capturing and sharing our faculty's story.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1PaYa9YVfR/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/heart_of_agni?igsh=cTRpNmFyczV4bHFo"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@heartofagni?si=zmqOWArbeCMuur2d"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-university"></i> Students Union, Faculty of Management & Commerce, SEUSL
+                        </li>
+                        <li><i class="fas fa-map-marker-alt"></i> Oluvil, Sri Lanka</li>
+                        <li><i class="fas fa-envelope"></i> heartofagni99@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +94 762 870 574 <br> +94 781 010 781</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on our latest events and media releases.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Heart of Agni - SEUSL Media Unit. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/events.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

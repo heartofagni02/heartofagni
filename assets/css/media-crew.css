@@ -1,0 +1,381 @@
+/* Media Crew Page Styles */
+
+/* Media Crew Hero */
+.media-crew-hero {
+    background: linear-gradient(rgba(10, 31, 68, 0.9), rgba(10, 31, 68, 0.95)), 
+                url('https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 180px 0 100px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.media-crew-hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.media-crew-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--light-blue);
+    transition: var(--transition);
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb i {
+    font-size: 0.8rem;
+}
+
+/* Coming Soon Section */
+.coming-soon-section {
+    padding: 100px 0;
+    background-color: var(--primary-blue);
+    text-align: center;
+}
+
+.coming-soon-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.coming-soon-icon {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--accent-blue), #3a5ca9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 40px;
+    color: white;
+    font-size: 3rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(45, 77, 143, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(45, 77, 143, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(45, 77, 143, 0);
+    }
+}
+
+.coming-soon-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.coming-soon-message {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.countdown-container {
+    background-color: var(--secondary-blue);
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: var(--shadow);
+}
+
+.countdown-text {
+    color: var(--light-blue);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.crew-stats-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.stat-preview {
+    background-color: rgba(10, 31, 68, 0.5);
+    padding: 25px 15px;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.stat-preview:hover {
+    transform: translateY(-5px);
+    background-color: rgba(10, 31, 68, 0.7);
+}
+
+.stat-preview i {
+    font-size: 2rem;
+    color: var(--accent-blue);
+    margin-bottom: 15px;
+}
+
+.stat-preview h3 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.stat-preview p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.stay-updated {
+    margin-bottom: 50px;
+}
+
+.stay-updated h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.stay-updated p {
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.stay-updated .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.social-btn:hover {
+    background-color: var(--accent-blue);
+    transform: translateY(-5px);
+}
+
+.navigation-prompt {
+    background-color: var(--secondary-blue);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.navigation-prompt p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.navigation-prompt a {
+    color: var(--accent-blue);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.navigation-prompt a:hover {
+    color: white;
+}
+
+/* Updated Footer Logo Styles */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-logo .logo-icon {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo .Seu_logo,
+.footer-logo .union_logo,
+.footer-logo .media_logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Special styling for each logo */
+.footer-logo .logo-icon:nth-child(1) { /* SEUSL Logo */
+    width: 60px;
+    height: 60px;
+}
+
+.footer-logo .logo-icon:nth-child(2) { /* Union Logo */
+    width: 55px;
+    height: 55px;
+}
+
+.footer-logo .logo-icon:nth-child(3) { /* Heart of Agni Logo */
+    width: 50px;
+    height: 50px;
+}
+
+.footer-logo-text {
+    margin-left: 10px;
+}
+
+.footer-logo-text h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footer-logo-text p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .media-crew-hero-title {
+        font-size: 3rem;
+    }
+    
+    .coming-soon-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-logo-text {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .media-crew-hero {
+        padding: 150px 0 80px;
+        margin-top: 0px;
+    }
+    
+    .media-crew-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .media-crew-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .coming-soon-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+    }
+    
+    .coming-soon-content h2 {
+        font-size: 2rem;
+    }
+    
+    .coming-soon-message {
+        font-size: 1rem;
+    }
+    
+    .crew-stats-preview {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+        .footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;       /* vertical center */
+    justify-content: center;   /* horizontal center */
+    gap: 15px;
+    text-align: center;
+}
+    .footer-logo .logo-icon {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .media-crew-hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .media-crew-hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .coming-soon-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .crew-stats-preview {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-preview {
+        padding: 20px;
+    }
+    
+    .footer-logo .logo-icon:nth-child(1),
+    .footer-logo .logo-icon:nth-child(2),
+    .footer-logo .logo-icon:nth-child(3) {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .countdown-container {
+        padding: 25px 20px;
+    }
+}

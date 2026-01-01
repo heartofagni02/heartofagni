@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information Section -->
+    <!-- Defines character encoding and responsive viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Heart of Agni | SEUSL Media Unit</title>
+
+    <!-- Stylesheets Section -->
+    <!-- Links to external CSS files for styling -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header & Navigation Section -->
+    <!-- Main website header with logo and navigation menu -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo Section -->
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <img src="assets/images/logo/agini logo white font png.png" alt="Heart of Agni Logo">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">HEART OF AGNI</span>
+                            <span class="logo-subtitle">SEUSL Media Unit</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Main Navigation Menu -->
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="media_crew.html">media crew</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <!-- Main banner section for gallery page -->
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="gallery-hero-content">
+                <h1 class="gallery-hero-title">Our Gallery</h1>
+                <p class="gallery-hero-subtitle">Capturing moments, telling stories - A visual journey through our
+                    faculty's vibrant life</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Gallery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter & Statistics Section -->
+    <!-- Contains filtering options and gallery statistics -->
+    <section class="gallery-controls">
+        <div class="container">
+            <div class="gallery-filter-container">
+                <!-- Filter Buttons -->
+                <!-- Allows users to filter gallery items by category -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-th-large"></i> All Media
+                    </button>
+                    <button class="filter-btn" data-filter="photos">
+                        <i class="fas fa-camera"></i> Photos
+                    </button>
+                    <button class="filter-btn" data-filter="videos">
+                        <i class="fas fa-video"></i> Videos
+                    </button>
+                    <button class="filter-btn" data-filter="thambapanni">
+                        <i class="fas fa-calendar-alt"></i> Thambapanni
+                    </button>
+                    <button class="filter-btn" data-filter="symposium">
+                        <i class="fas fa-graduation-cap"></i> Symposium
+                    </button>
+                    <button class="filter-btn" data-filter="entrepreneurship">
+                        <i class="fas fa-briefcase"></i> Entrepreneurship
+                    </button>
+                    <button class="filter-btn" data-filter="sports">
+                        <i class="fas fa-trophy"></i> Sports
+                    </button>
+                    <button class="filter-btn" data-filter="educational">
+                        <i class="fas fa-book"></i> Educational
+                    </button>
+                    <button class="filter-btn" data-filter="cultural">
+                        <i class="fas fa-theater-masks"></i> Cultural
+                    </button>
+                    <button class="filter-btn" data-filter="religious">
+                        <i class="fas fa-pray"></i> Religious
+                    </button>
+                    <button class="filter-btn" data-filter="environmental">
+                        <i class="fas fa-leaf"></i> Environmental
+                    </button>
+                </div>
+
+                <!-- Search Box -->
+                <!-- Allows users to search within gallery items -->
+                <div class="gallery-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="gallerySearch" placeholder="Search gallery...">
+                </div>
+            </div>
+
+            <!-- Gallery Statistics -->
+            <!-- Shows counts of different media types -->
+            <div class="gallery-stats">
+                <div class="gallery-stat">
+                    <span class="stat-number" id="totalItems">2,870</span>
+                    <span class="stat-label">Total Items</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="stat-number" id="photosCount">1,856</span>
+                    <span class="stat-label">Photos</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="stat-number" id="videosCount">124</span>
+                    <span class="stat-label">Videos</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="stat-number" id="eventsCount">17</span>
+                    <span class="stat-label">Events</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery Grid Section -->
+    <!-- Displays all gallery items in a responsive grid -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+
+                <!-- ============================================ -->
+                <!-- THAMBAPANNI 2025 EVENT GALLERY ITEMS -->
+                <!-- Cultural festival organized by Arts Committee -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos cultural thambapanni">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/thambapanni.jpeg"
+                                alt="Thambapanni 2025 Cultural Event">
+                            <div class="gallery-overlay">
+                                <!-- View Full Screen Button -->
+                                <button class="view-btn" data-id="thambapanni-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <!-- Facebook Album Link Button -->
+                                <a href="https://www.facebook.com/share/p/1AUPFGDCoT/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag cultural">Cultural Festival</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Thambapanni 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> October 02, 2025</p>
+                            <p class="gallery-description">Spectacular celebration of Sri Lankan culture and heritage
+                                organized by Arts Committee</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-camera"></i> 308 Photos</span>
+                                <span><i class="fas fa-eye"></i> 2.5K views</span>
+                            </div>
+                            <!-- Facebook Album Link -->
+                            <a href="https://www.facebook.com/share/p/1AUPFGDCoT/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- 13TH INTERNATIONAL SYMPOSIUM 2025 GALLERY ITEMS -->
+                <!-- Academic conference with international participation -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos educational symposium">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/13th_International_Symposium_Image.jpeg"
+                                alt="13th International Symposium 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="symposium-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1HAyVAmqoa/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag educational">International Conference</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>13th International Symposium 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> September 12, 2025</p>
+                            <p class="gallery-description">Global connections and knowledge sharing at SEUSL</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-users"></i> International Event</span>
+                                <span><i class="fas fa-eye"></i> 1.2K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1HAyVAmqoa/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- ENTREPRENEURSHIP DAY 2025 GALLERY ITEMS -->
+                <!-- Business innovation and startup showcase event -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos entrepreneurship">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/entrepreneurship_day_2025.jpeg"
+                                alt="Entrepreneurship Day 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="entrepreneurship-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/16zhtJpS8x/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag entrepreneurship">Business Innovation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Entrepreneurship Day 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> September 11, 2025</p>
+                            <p class="gallery-description">Young visionaries showcasing innovative business ideas</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-lightbulb"></i> Startup Showcase</span>
+                                <span><i class="fas fa-eye"></i> 1.8K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/16zhtJpS8x/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- SPORTS FIESTA 2025 GALLERY ITEMS -->
+                <!-- Annual sports awards ceremony -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos sports">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/sports_fiesta_2025.jpeg"
+                                alt="Sports Fiesta 2025 Awards">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="sports-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1BiesZ8Mhx/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag sports">Sports Awards</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Sports Fiesta 2025 Awards</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> April 10, 2025</p>
+                            <p class="gallery-description">Champions recognized in various sports competitions</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-trophy"></i> Championship Event</span>
+                                <span><i class="fas fa-eye"></i> 1.4K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1BiesZ8Mhx/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- AKURATA HADAYAK 2025 GALLERY ITEMS -->
+                <!-- Educational equipment donation program -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos educational">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/akurata_hadayak.jpeg"
+                                alt="Akurata Hadayak 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="akurata-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/19nTuigdVa/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag educational">Education Program</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Akurata Hadayak 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> August 08, 2025</p>
+                            <p class="gallery-description">Book and educational equipment donation program</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-book"></i> Donation Drive</span>
+                                <span><i class="fas fa-eye"></i> 1.4K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/19nTuigdVa/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- BOND BASH 2025 GALLERY ITEMS -->
+                <!-- Cricket championship by Muslim Community -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos sports">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/bond_bash_2025.jpeg"
+                                alt="Bond Bash 2025 Cricket">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="bondbash-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/182Y7F2i8x/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag sports">Cricket Championship</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Bond Bash 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> July 2025</p>
+                            <p class="gallery-description">Celebration of unity and sportsmanship among students</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-users"></i> Community Event</span>
+                                <span><i class="fas fa-eye"></i> 1.8K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/182Y7F2i8x/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- 14TH ANNUAL INTERNATIONAL RESEARCH CONFERENCE -->
+                <!-- Academic research conference -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos educational symposium">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/airc_2025.jpeg" alt="14th AIRC 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="airc-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1Qs3CVE37U/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag educational">Research Conference</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>14th Annual International Research Conference</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> June 2025</p>
+                            <p class="gallery-description">Conversations on innovation and sustainability in management
+                            </p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-microscope"></i> Research Event</span>
+                                <span><i class="fas fa-eye"></i> 2.1K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1Qs3CVE37U/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- ORIENTATION PROGRAM 2025 GALLERY ITEMS -->
+                <!-- New student welcome ceremony -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos educational">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/Orientation_Program.jpeg"
+                                alt="Orientation Program 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="orientation-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1AWWpCBAaY/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag educational">Student Orientation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Orientation Program 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> June 12, 2025</p>
+                            <p class="gallery-description">Welcoming new students to university life at SEUSL</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-user-graduate"></i> New Students</span>
+                                <span><i class="fas fa-eye"></i> 1.5K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1AWWpCBAaY/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- WARSHIKA PIRITH DESHANAYA 2025 GALLERY ITEMS -->
+                <!-- Buddhist religious ceremony -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos religious">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/vesak_2025.jpeg"
+                                alt="Warshika Pirith Deshanaya 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="vesak-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://m.facebook.com/story.php?story_fbid=pfbid02fZzAevEJ7NPjjNaBkj1F6A6fWVpEb36sDgaMpqpnCe6qcAgp8Dkya5CNUS46PxDhl&id=100064210352203&mibextid=Nif5oz"
+                                    class="fb-album-btn" target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag religious">Buddhist Ceremony</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Warshika Pirith Deshanaya 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> May 2025</p>
+                            <p class="gallery-description">Sarvathrika Pirith ceremony at the university</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-pray"></i> Religious Event</span>
+                                <span><i class="fas fa-eye"></i> 1.3K views</span>
+                            </div>
+                            <a href="https://m.facebook.com/story.php?story_fbid=pfbid02fZzAevEJ7NPjjNaBkj1F6A6fWVpEb36sDgaMpqpnCe6qcAgp8Dkya5CNUS46PxDhl&id=100064210352203&mibextid=Nif5oz"
+                                class="view-fb-album" target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- 17TH GENERAL CONVOCATION GALLERY ITEMS -->
+                <!-- Graduation ceremony -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos educational">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/convocation_2025.jpeg"
+                                alt="17th General Convocation">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="convocation-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1C8yBU9BRB/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag educational">Graduation Ceremony</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>17th General Convocation</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> May 3-4, 2025</p>
+                            <p class="gallery-description">Celebrating academic achievements of SEUSL graduates</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-graduation-cap"></i> Graduates</span>
+                                <span><i class="fas fa-eye"></i> 2.4K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1C8yBU9BRB/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- MUWARABHISHEKA 2025 GALLERY ITEMS -->
+                <!-- Cultural unity festival -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos cultural">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/muwarabhisheka_2025.jpeg"
+                                alt="Muwarabhisheka 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="muwarabhisheka-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1AYp9bgEu5/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag cultural">Unity Festival</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>මුවරාභිෂේක - 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> April 2025</p>
+                            <p class="gallery-description">Cultural festival celebrating unity and friendship among
+                                students</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-hands-helping"></i> Unity Event</span>
+                                <span><i class="fas fa-eye"></i> 1.9K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1AYp9bgEu5/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- HANTHANA BATCH TRIP GALLERY ITEMS -->
+                <!-- Student adventure trip -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos sports">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/hanthana_trip.jpeg"
+                                alt="Hanthana Batch Trip">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="hanthana-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1Afi7fsJw4/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag sports">Adventure Trip</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>අග්නිදිගෙන් හන්තානට</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> April 2025</p>
+                            <p class="gallery-description">Memorable batch trip to Hanthana mountains</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-mountain"></i> Adventure</span>
+                                <span><i class="fas fa-eye"></i> 2.2K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1Afi7fsJw4/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- AGNISURYAWARUNA 2025 GALLERY ITEMS -->
+                <!-- Cultural performance event -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos cultural">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/agnisuryawaruna_2025.jpeg"
+                                alt="Agnisuryawaruna 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="agnisuryawaruna-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://m.facebook.com/story.php?story_fbid=pfbid02KuHbG42KHpaL17FSUPJ92A6ASHxUrLhrUuX4QzMKWwLa6qUxszKf5RVRR2t9LNcnl&id=100064210352203&mibextid=Nif5oz"
+                                    class="fb-album-btn" target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag cultural">Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>අග්නි සූර්ය වරුණා - 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> March 2025</p>
+                            <p class="gallery-description">Cultural performance organized by Arts Committee</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-theater-masks"></i> Cultural Performance</span>
+                                <span><i class="fas fa-eye"></i> 1.6K views</span>
+                            </div>
+                            <a href="https://m.facebook.com/story.php?story_fbid=pfbid02KuHbG42KHpaL17FSUPJ92A6ASHxUrLhrUuX4QzMKWwLa6qUxszKf5RVRR2t9LNcnl&id=100064210352203&mibextid=Nif5oz"
+                                class="view-fb-album" target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- NOOR AL-IFTHAR 2025 GALLERY ITEMS -->
+                <!-- Ramadan celebration event -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos religious">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/noor_al_iftihar_2025.jpeg"
+                                alt="Noor Al-Iftihar 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="noor-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://m.facebook.com/story.php?story_fbid=pfbid0aKqX1iC82oxnnghxkF7W9qeLCyxL391iBLm4TSExZtXMWBZaQMvX3brFs6MdCAKKl&id=100064210352203&mibextid=Nif5oz"
+                                    class="fb-album-btn" target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag religious">Islamic Event</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Noor Al-Iftihar 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> March 2025</p>
+                            <p class="gallery-description">Ramadan celebration by Muslim Community of FMC</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-mosque"></i> Ramadan Celebration</span>
+                                <span><i class="fas fa-eye"></i> 1.7K views</span>
+                            </div>
+                            <a href="https://m.facebook.com/story.php?story_fbid=pfbid0aKqX1iC82oxnnghxkF7W9qeLCyxL391iBLm4TSExZtXMWBZaQMvX3brFs6MdCAKKl&id=100064210352203&mibextid=Nif5oz"
+                                class="view-fb-album" target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- HOLI FESTIVAL 2025 GALLERY ITEMS -->
+                <!-- Festival of colors celebration -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos cultural">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/holi_2025.jpeg" alt="Holi Festival 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="holi-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1A5QuKZ1Rq/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag cultural">Color Festival</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Festival of Colours 2025 - Holi</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> March 2025</p>
+                            <p class="gallery-description">Vibrant celebration of colors and joy organized by Arts
+                                Committee</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-palette"></i> Color Celebration</span>
+                                <span><i class="fas fa-eye"></i> 1.9K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1A5QuKZ1Rq/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- BEACH CLEANING PROGRAM 2025 GALLERY ITEMS -->
+                <!-- Environmental conservation initiative -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos environmental">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/beach_cleaning_2025.jpeg"
+                                alt="Beach Cleaning Program 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="beach-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1BwvA9gFYD/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag environmental">Cleanup Drive</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Beach Cleaning Program 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> March 1, 2025</p>
+                            <p class="gallery-description">Environmental conservation initiative by Environment
+                                Committee</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-leaf"></i> Environmental</span>
+                                <span><i class="fas fa-eye"></i> 1.1K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1BwvA9gFYD/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- PONGAL CELEBRATION 2025 GALLERY ITEMS -->
+                <!-- Traditional harvest festival -->
+                <!-- ============================================ -->
+                <div class="gallery-item" data-category="photos cultural">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-image">
+                            <img src="assets/images/event_img/past_event_img/pongal_2025.jpeg"
+                                alt="Pongal Celebration 2025">
+                            <div class="gallery-overlay">
+                                <button class="view-btn" data-id="pongal-1">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://www.facebook.com/share/p/1ErmZXhhdK/" class="fb-album-btn"
+                                    target="_blank" title="View Full Facebook Album">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="gallery-category">
+                                    <span class="category-tag cultural">Harvest Festival</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Pongal Celebration 2025</h3>
+                            <p class="gallery-date"><i class="far fa-calendar"></i> January 2025</p>
+                            <p class="gallery-description">Traditional harvest festival celebrations at SEUSL</p>
+                            <div class="gallery-meta">
+                                <span><i class="fas fa-wheat-awn"></i> Cultural Harvest</span>
+                                <span><i class="fas fa-eye"></i> 1.4K views</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/p/1ErmZXhhdK/" class="view-fb-album"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i> View Full Album
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button Section -->
+            <!-- Allows users to load more gallery items dynamically -->
+            <div class="load-more-container">
+                <a href="https://www.facebook.com/share/17tNgfievr/" target="_blank">
+                    <button class="btn btn-primary" id="loadMore">
+                        <i class="fas fa-plus"></i> Load More
+                    </button>
+                </a>
+                <p class="items-shown">Showing <span id="shownCount">16</span> of <span id="totalCount">2,870</span>
+                    items</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <!-- Full-screen image viewing modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-container">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-nav prev" id="lightboxPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav next" id="lightboxNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="lightbox-content">
+                <div class="lightbox-media">
+                    <!-- Media will be inserted here by JavaScript -->
+                </div>
+                <div class="lightbox-info">
+                    <h3 id="lightboxTitle">Media Title</h3>
+                    <p class="lightbox-date" id="lightboxDate">Date</p>
+                    <p class="lightbox-description" id="lightboxDescription">Description will appear here</p>
+                    <div class="lightbox-meta">
+                        <span id="lightboxCamera"></span>
+                        <span id="lightboxViews"></span>
+                    </div>
+                    <div class="lightbox-actions">
+                        <button class="lightbox-action-btn" id="lightboxDownload">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                        <button class="lightbox-action-btn" id="lightboxShare">
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                        <!-- Facebook Album Link in Lightbox -->
+                        <a href="" class="lightbox-action-btn fb-album-lightbox" id="lightboxFbAlbum" target="_blank">
+                            <i class="fab fa-facebook"></i> Facebook Album
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <!-- Full-screen video viewing modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-container">
+            <button class="video-close" id="videoClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-player">
+                <!-- Video will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Collections Section -->
+    <!-- Highlights key event collections -->
+    <section class="featured-collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collections</h2>
+                <p class="section-subtitle">Curated galleries from our most memorable events</p>
+            </div>
+
+            <div class="collections-grid">
+                <!-- Thambapanni Collection -->
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="assets/images/event_img/past_event_img/thambapanni.jpeg" alt="Thambapanni 2025">
+                        <div class="collection-overlay">
+                            <span class="collection-count">
+                                <i class="fas fa-images"></i> 308 photos
+                            </span>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Thambapanni 2025</h3>
+                        <p>Complete gallery from the spectacular Sri Lankan cultural festival celebration.</p>
+                        <a href="https://www.facebook.com/share/p/1AUPFGDCoT/" class="collection-link" target="_blank">
+                            View Full Album <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Symposium Collection -->
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="assets/images/event_img/past_event_img/13th_International_Symposium_Image.jpeg"
+                            alt="13th International Symposium">
+                        <div class="collection-overlay">
+                            <span class="collection-count">
+                                <i class="fas fa-images"></i> 277 photos
+                            </span>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>13th International Symposium</h3>
+                        <p>Global academic conference showcasing research and innovation at SEUSL.</p>
+                        <a href="https://www.facebook.com/share/p/1HAyVAmqoa/" class="collection-link" target="_blank">
+                            View Full Album <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Entrepreneurship Collection -->
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="assets/images/event_img/past_event_img/entrepreneurship_day_2025.jpeg"
+                            alt="Entrepreneurship Day 2025">
+                        <div class="collection-overlay">
+                            <span class="collection-count">
+                                <i class="fas fa-images"></i> 245 photos
+                            </span>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Entrepreneurship Day 2025</h3>
+                        <p>Young entrepreneurs showcasing innovative business ideas and startups.</p>
+                        <a href="https://www.facebook.com/share/p/16zhtJpS8x/" class="collection-link" target="_blank">
+                            View Full Album <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Website footer with contact info and links -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="footer-logo">
+                            <div class="footer-logo-section">
+                                <div class="logo-icon">
+                                    <img src="assets/images/logo/seu_logo.png" alt="Heart of Agni Logo"
+                                        class="Seu_logo">
+                                </div>
+                                <div class="logo-icon">
+                                    <img src="assets/images/logo/UnionLogo.png" alt="Heart of Agni Logo"
+                                        class="union_logo">
+                                </div>
+                                <div class="logo-icon">
+                                    <img src="assets/images/logo/agini logo white font png.png" alt="Heart of Agni Logo"
+                                        class="media_logo">
+                                </div>
+                            </div>
+                            <br> <br>
+                            <div class="footer-logo-text">
+                                <h3>HEART OF AGNI</h3>
+                                <p>Media Unit</p>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <p class="footer-about">The official media unit of Faculty of Management & Commerce, South Eastern
+                        University of Sri Lanka, dedicated to capturing and sharing our faculty's story.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1PaYa9YVfR/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/heart_of_agni?igsh=cTRpNmFyczV4bHFo" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@heartofagni?si=zmqOWArbeCMuur2d" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-university"></i> Students Union, Faculty of Management & Commerce, SEUSL
+                        </li>
+                        <li><i class="fas fa-map-marker-alt"></i> Oluvil, Sri Lanka</li>
+                        <li><i class="fas fa-envelope"></i> heartofagni99@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +94 762 870 574 <br> +94 781 010 781</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on our latest events and media releases.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023-2025 Heart of Agni - SEUSL Media Unit. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <!-- Links to external JavaScript files for functionality -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+</body>
+
+</html>
