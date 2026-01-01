@@ -92,5 +92,5 @@ heart-of-agni/
 ### Local Development
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/heart-of-agni.git
+   git clone https://github.com/heartofagni02/heart-of-agni.git
    cd heart-of-agni
