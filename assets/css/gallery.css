@@ -3,7 +3,7 @@
 /* Gallery Hero */
 .gallery-hero {
     background: linear-gradient(rgba(10, 31, 68, 0.9), rgba(10, 31, 68, 0.95)),
-        url('/assets/images/Galary_img/bg.JPG');
+        url('../images/Galary_img/bg.JPG');
     background-size: cover;
     background-position: bottom;
     padding: 180px 0 100px;
@@ -944,4 +944,5 @@
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: center;
+
 }
