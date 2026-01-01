@@ -3,7 +3,7 @@
 /* Contact Hero */
 .contact-hero {
     background: linear-gradient(rgba(10, 31, 68, 0.9), rgba(10, 31, 68, 0.95)),
-        url('https://github.com/heartofagni02/heartofagni/blob/main/assets/images/Contact_img/BG_image.JPG');
+        url('../images/Contact_img');
     background-size: cover;
     background-position: center;
     padding: 180px 0 100px;
@@ -762,4 +762,5 @@
     text-align: center;
 
 }
+
 
