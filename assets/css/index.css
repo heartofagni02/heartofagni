@@ -205,7 +205,7 @@ a {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(10, 31, 68, 0.85), rgba(10, 31, 68, 0.9)),
-        url('https://github.com/heartofagni02/heartofagni/blob/main/assets/images/index_img/BG_Image.JPG');
+        url('../images/index_img/BG_Image.JPG');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -982,6 +982,7 @@ a {
     font-size: 0.9rem;
 
 }
+
 
 
 
