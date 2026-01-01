@@ -16,7 +16,7 @@ body {
 ================================ */
 .about-hero {
     background: linear-gradient(rgba(10, 31, 68, 0.9), rgba(10, 31, 68, 0.95)),
-        url('/assets/images/about_img/BG_Image.JPG');
+        url('../images/about_img/BG_Image.JPG');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -668,4 +668,5 @@ body {
     .footer-logo-text h3 {
         font-size: 1.3rem;
     }
+
 }
