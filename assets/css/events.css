@@ -3,7 +3,7 @@
 /* Events Hero */
 .events-hero {
     background: linear-gradient(rgba(10, 31, 68, 0.9), rgba(10, 31, 68, 0.95)),
-        url('/assets/images/event_img/BG_Image.jpeg');
+        url('../images/event_img/BG_Image.jpeg');
     background-size: contain;
     background-position: center;
     padding: 180px 0 100px;
@@ -1072,4 +1072,5 @@
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: center;
+
 }
