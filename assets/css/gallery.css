@@ -156,6 +156,10 @@
     margin-top: 8px;
 }
 
+/* =============================================
+   IMPROVED GALLERY GRID - FIXED HEIGHT ISSUES
+============================================= */
+
 /* Gallery Grid */
 .gallery-main {
     padding: 80px 0;
@@ -176,6 +180,10 @@
     transition: var(--transition);
     opacity: 1;
     transform: translateY(0);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 480px; /* Increased minimum height */
 }
 
 .gallery-item.hidden {
@@ -194,9 +202,10 @@
 }
 
 .gallery-image {
-    height: 200px;
+    height: 220px; /* Increased from 200px */
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .gallery-image img {
@@ -315,11 +324,16 @@
     color: #ed8936;
 }
 
+/* =============================================
+   IMPROVED GALLERY INFO SECTION - FIXED HEIGHT
+============================================= */
+
 .gallery-info {
     padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
+    min-height: 260px; /* Ensure minimum height for content */
 }
 
 .view-fb-album {
@@ -335,6 +349,7 @@
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
+    flex-shrink: 0; /* Prevent button from shrinking */
 }
 
 .view-fb-album:hover {
@@ -351,6 +366,7 @@
     margin-bottom: 10px;
     color: white;
     line-height: 1.4;
+    min-height: 3em; /* Reserve space for 2 lines of text */
 }
 
 .gallery-date {
@@ -360,6 +376,7 @@
     display: flex;
     align-items: center;
     gap: 6px;
+    flex-shrink: 0;
 }
 
 .gallery-description {
@@ -368,6 +385,12 @@
     line-height: 1.5;
     margin-bottom: 15px;
     flex: 1;
+    overflow: hidden;
+    /* Show max 3 lines with ellipsis */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    min-height: 4.5em; /* Reserve space for 3 lines (1.5em per line) */
 }
 
 .gallery-meta {
@@ -377,7 +400,9 @@
     font-size: 0.8rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 15px;
-    margin-top: auto;
+    margin-top: auto; /* Push to bottom */
+    flex-shrink: 0; /* Prevent shrinking */
+    min-height: 40px; /* Reserve space for meta info */
 }
 
 .gallery-meta span {
@@ -386,7 +411,29 @@
     gap: 5px;
 }
 
-/* Load More Button */
+/* =============================================
+   FIX FOR DIFFERENT CONTENT LENGTHS
+============================================= */
+
+/* For cards with Facebook album link */
+.gallery-item.has-fb-link .gallery-description {
+    -webkit-line-clamp: 2; /* Show fewer lines when FB button is present */
+    min-height: 3em;
+}
+
+/* For cards without descriptions */
+.gallery-item.no-description .gallery-description {
+    display: none;
+}
+
+.gallery-item.no-description .gallery-info {
+    min-height: 220px;
+}
+
+/* =============================================
+   LOAD MORE BUTTON
+============================================= */
+
 .load-more-container {
     text-align: center;
     padding: 30px 0;
@@ -680,6 +727,10 @@
     border-radius: 10px;
     overflow: hidden;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 420px;
 }
 
 .collection-card:hover {
@@ -691,6 +742,7 @@
     height: 200px;
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .collection-image img {
@@ -723,12 +775,17 @@
 
 .collection-info {
     padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
 }
 
 .collection-info h3 {
     font-size: 1.4rem;
     margin-bottom: 12px;
     color: white;
+    min-height: 3em;
 }
 
 .collection-info p {
@@ -736,6 +793,12 @@
     line-height: 1.6;
     margin-bottom: 20px;
     font-size: 0.95rem;
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    min-height: 4.5em;
 }
 
 .collection-link {
@@ -746,6 +809,7 @@
     gap: 8px;
     transition: var(--transition);
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 .collection-link:hover {
@@ -819,7 +883,10 @@
     transform: translateY(-3px);
 }
 
-/* Responsive Styles */
+/* =============================================
+   RESPONSIVE STYLES WITH HEIGHT ADJUSTMENTS
+============================================= */
+
 @media (max-width: 992px) {
     .gallery-hero-title {
         font-size: 3rem;
@@ -874,6 +941,36 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
+    /* Adjusted heights for mobile */
+    .gallery-item {
+        min-height: 460px;
+    }
+
+    .gallery-image {
+        height: 200px;
+    }
+
+    .gallery-info {
+        min-height: 240px;
+    }
+
+    .gallery-info h3 {
+        min-height: 2.8em;
+    }
+
+    .gallery-description {
+        min-height: 4em;
+        -webkit-line-clamp: 2;
+    }
+
+    .collection-card {
+        min-height: 400px;
+    }
+
+    .collection-info {
+        min-height: 200px;
+    }
+
     .lightbox-container {
         max-height: 95vh;
     }
@@ -903,6 +1000,35 @@
         grid-template-columns: 1fr;
     }
 
+    /* Adjusted heights for small mobile */
+    .gallery-item {
+        min-height: 440px;
+    }
+
+    .gallery-image {
+        height: 180px;
+    }
+
+    .gallery-info {
+        min-height: 220px;
+        padding: 15px;
+    }
+
+    .gallery-info h3 {
+        font-size: 1.1rem;
+        min-height: 2.5em;
+    }
+
+    .gallery-description {
+        font-size: 0.85rem;
+        min-height: 3.5em;
+    }
+
+    .gallery-meta {
+        font-size: 0.75rem;
+        min-height: 35px;
+    }
+
     .gallery-stats {
         gap: 20px;
         padding: 20px;
@@ -914,6 +1040,25 @@
 
     .collections-grid {
         grid-template-columns: 1fr;
+    }
+
+    .collection-card {
+        min-height: 380px;
+    }
+
+    .collection-info {
+        padding: 20px;
+        min-height: 180px;
+    }
+
+    .collection-info h3 {
+        font-size: 1.2rem;
+        min-height: 2.5em;
+    }
+
+    .collection-info p {
+        font-size: 0.9rem;
+        min-height: 4em;
     }
 
     .cta-text h2 {
@@ -1009,11 +1154,6 @@
     animation: fadeInUp 0.5s ease forwards;
 }
 
-/* Fix for gallery info layout */
-.gallery-info {
-    min-height: 180px;
-}
-
 /* Accessibility improvements */
 .gallery-search input::placeholder {
     color: rgba(255, 255, 255, 0.5);
@@ -1051,5 +1191,7 @@
     .gallery-item {
         break-inside: avoid;
         page-break-inside: avoid;
+        min-height: auto !important;
+        height: auto !important;
     }
 }
