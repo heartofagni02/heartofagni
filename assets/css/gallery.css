@@ -320,7 +320,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    overflow: visible;
 }
 
 .view-fb-album {
@@ -378,6 +377,7 @@
     font-size: 0.8rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 15px;
+    margin-top: auto;
 }
 
 .gallery-meta span {
@@ -392,10 +392,23 @@
     padding: 30px 0;
 }
 
-.load-more-container .btn {
+.load-more-btn {
     padding: 15px 40px;
     font-size: 1rem;
     margin-bottom: 15px;
+    background-color: var(--accent-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.load-more-btn:hover {
+    background-color: var(--light-blue);
+    transform: translateY(-2px);
 }
 
 .items-shown {
@@ -732,6 +745,7 @@
     align-items: center;
     gap: 8px;
     transition: var(--transition);
+    text-decoration: none;
 }
 
 .collection-link:hover {
@@ -792,6 +806,12 @@
     gap: 10px;
     background-color: white;
     color: var(--accent-blue);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: var(--transition);
 }
 
 .cta-action .btn:hover {
@@ -876,6 +896,7 @@
         width: 100%;
         overflow-x: auto;
         padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
     }
 
     .gallery-grid {
@@ -912,16 +933,20 @@
    Footer Logo Layout Fix
 ================================ */
 .footer-logo {
-    display: block;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.footer-logo .footer-logo-section {
+.footer-logo-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 
 /* Special styling for each logo */
@@ -943,10 +968,17 @@
     height: 50px;
 }
 
+.footer-logo .logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-logo .logo-icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 .footer-logo-text {
@@ -969,6 +1001,65 @@
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: center;
-
 }
 
+/* Animation for gallery items */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gallery-item {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Fix for gallery info layout */
+.gallery-info {
+    min-height: 180px;
+}
+
+/* Accessibility improvements */
+.gallery-search input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.filter-btn:focus,
+.gallery-search input:focus,
+.view-btn:focus,
+.lightbox-close:focus,
+.lightbox-nav:focus,
+.video-close:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .gallery-controls,
+    .filter-buttons,
+    .gallery-search,
+    .view-btn,
+    .video-play,
+    .lightbox-close,
+    .lightbox-nav,
+    .video-close,
+    .upload-cta {
+        display: none !important;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .gallery-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
